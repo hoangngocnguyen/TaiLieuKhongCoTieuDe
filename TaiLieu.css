@@ -1,0 +1,218 @@
+/* tạo layout 3 cột */
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 50px;
+
+    /* màu nền */
+    background: linear-gradient(45deg, #c6cde6, #3498db);
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+
+    /* background-image: url('https://waki.vn/wp-content/uploads/2020/03/545624.png.webp');
+    background-size: cover;
+    background-position: 1% 45%; */
+
+    /* background-color: #123eee; */
+    color: #122274;
+    text-align: left;
+    padding: 15px 0px 0px 15px;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+}    
+
+.menu-container {
+    margin-left: auto;
+}
+    .menu-toggle {
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+      
+    .bar {
+        background-color: #000;
+        height: 2.5px;
+        width: 25px;
+        margin: 3px 0;
+        transition: 0.4s;
+        
+    }
+      
+    .menu {
+        width: 70%;
+        height: 70%;
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+
+        position: fixed;
+        top: 50px;
+        right: 20px;
+
+        font-size: 18px;
+
+        display: flex;
+        flex-direction: row;
+        display: none;
+        justify-content: space-between;
+        z-index: 3;
+
+        
+    }
+    
+      .menu1, .menu2{
+        list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+        padding: 0;
+
+        height: 40%;
+        width: 30%;
+      }
+      
+      
+      
+      .title-menu {
+        font-weight: bold;
+      }
+
+
+      .closeButton {
+        width: 60px;
+        height: 30px;
+
+        position: fixed;
+        top: 55px;
+        right: 25px;
+
+        font-size: 14px;
+
+        display: none;
+        z-index: 4;
+    }
+
+
+.sidebar-content {
+    display: flex;
+}
+    .sidebar {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 10px 20px 20px 10px;
+    }
+        .header__search {
+            display: flex;
+            padding: 10px;
+        }
+        input#skw.input-search{
+            width: 90%;
+            height: 23px;
+        }
+        #icon_search {
+            width: 23px;
+            height: 23px;
+            background-color: #fff;
+        }
+        #button_search {
+            padding: 0;
+            width: 28px;
+            height: 28px;
+        }
+
+
+    .content {
+        flex: 1;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+        p{
+            white-space: pre-line;
+        }
+        .TieuSu {
+            display: flex;
+        }
+        #Anh_Khoi {
+            width: 250px;
+            position: relative;
+        }
+        #music{
+            width: 300px;
+            height: 45px;
+            margin-top: 7px;
+        }
+        #Video {
+            width: 350px;
+            height: 200px ;
+        }
+        .form {
+            border-top: 10px solid #4f6367;
+            margin-top: 2px;
+            padding-bottom: 20px;
+            
+        }
+
+        #Comment {
+            resize: none;
+            width: 100%;
+            height: 90px;
+        }
+        #XacNhan {
+            position: relative;
+            top: 25px;
+            left: 10px;
+        }
+
+.footer {
+    height: 105px;
+    padding: 10px 20px 20px 20px;
+    margin-top: 20px;
+
+    background-color: #3a3a3a;
+    color: #ffffff80;
+    font-family: tahoma;
+
+
+    justify-content: space-around;
+}
+
+    .footer span { 
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    .Detail{
+        padding-top: 10px;
+
+        font-size: 14px;
+
+        
+    }
+    
+    /*Ảnh Logo*/
+    .Detail img {
+        width: 28px;
+        margin-right: 30px;
+    }
+
+
+    .footer p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+
+
